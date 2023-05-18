@@ -1,0 +1,94 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+// import "../Style/SnackDetails.css"
+
+
+const API = process.env.REACT_APP_API_URL
+ 
+function ClientLoans() {
+  const [client, setClient] = useState({});
+ 
+  const { clientId } = useParams();
+  const navigate = useNavigate();
+
+
+
+
+  useEffect(() => {
+    axios.get(`${API}/clients/${clientId}`)
+    .then((response) => {
+      
+         setClient(response.data)
+      
+    }).catch((e) => {
+   
+      console.warn("catch:", e)
+    })
+  }, [clientId]);
+
+//   const deleteSnack = () => {
+//     axios
+//       .delete(`${API}/snacks/${snackId}`)
+//       .then(() => {
+//         navigate(`/snacks`);
+//       })
+//       .catch((e) => {
+//         console.warn("catch:", e);
+//       });
+//   };
+
+
+//   const handleDelete = () => {
+//     if (window.confirm("Are you sure you want to delete?")) {
+//         // deleteSnack();
+//   }}
+
+
+
+return (
+  <article className="article-detail" >
+
+   <div className="snackDetails"> 
+    <h1>{client.first_name}  {client.last_name}</h1>
+    {/* {snack.is_healthy ? (<img  className="corazon" src={heart.red} alt="red heart"/>) : (<img  className="corazon" src={heart.black} alt="black heart"/>)}
+    <img className="snack-img" src={snack.image} alt="snack pic" /> */}
+    <div>
+         <h3>Adress:{client.direccion}  </h3>
+         <h3>Ph:{client.telefono} </h3>
+         <h3>Email:{client.email} </h3>
+         <h3>Social Sec.:{client.ss} </h3>
+         <h3>DoB:{client.dob} </h3>
+         <h3>Lic Numeber:{client.lic_number} </h3>
+    </div>
+   
+
+
+    <div className="showNavigation">
+        <div>
+          <Link to={`/clients`}>
+            <button>Back</button>
+          </Link>
+        </div>
+        <div>
+          <Link to={`/clients/${client.client_id}/edit`}>
+            <button>Edit</button>
+          </Link>
+        </div>
+        {/* <div>
+          <button onClick={handleDelete}>Delete</button>
+        </div> */}
+      </div>
+      {/* <Reviews /> */}
+    
+   
+
+    
+
+    </div>
+  </article>
+); 
+}
+
+export default ClientLoans;

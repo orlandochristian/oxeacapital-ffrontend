@@ -1,0 +1,27 @@
+.clients{
+    background-image: linear-gradient(to right,rgb(233, 215, 137),rgb(255,0, 0, 0),rgb(233, 215, 137));
+      border-radius: 10px;
+      padding: 2em;
+      box-shadow: 2px 2px 4px rgb(188, 182, 182);
+      margin: 20px auto;
+      width: 80%;
+    }
+    
+    .all-clients {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .oneclient {
+        /* border: 1px solid black; */
+        border-radius: 3px;
+        display: block;
+        padding: 20px;
+        text-align: center;
+        
+      }
+
+      .oneclient:hover {
+        box-shadow: 5px 5px 5px 5px grey;
+      }
