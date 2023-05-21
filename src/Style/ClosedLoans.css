@@ -1,0 +1,23 @@
+.all-closedloans {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+    
+}
+
+/* .closedloans {
+    margin-bottom: 40px;
+} */
+
+.closedloan {
+    border-radius: 3px;
+        display: block;
+        padding: 20px;
+        text-align: center; 
+        margin-bottom: 20px;
+}
+
+.closedloan:hover {
+    box-shadow: 5px 5px 5px 5px grey;
+    cursor: pointer;
+}

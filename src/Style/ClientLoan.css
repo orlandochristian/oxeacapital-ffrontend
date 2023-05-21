@@ -1,0 +1,97 @@
+.clientloan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+   
+}
+
+.clientdatos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px
+}
+
+
+.bton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.Loans {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #fafafa;
+    gap: 10px;
+}
+
+.loanpartes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   gap: 10px;
+}
+
+.loanpartes button {
+    width: 200px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+
+
+.loanpartes2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.loanpartes2 button {
+    width: 200px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.Payments {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.Payments button {
+    margin-bottom: 10px;
+    width: 150px;
+    padding: 2px;
+    border-radius: 7px;
+}
+
+table {
+    width: 100%;
+   
+    
+  }
+  
+  td {
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+  }
+  
+  tbody td:not(td:first-of-type):hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: aliceblue;
+  }

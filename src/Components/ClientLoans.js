@@ -1,8 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import axios from "axios";
-// import "../Style/SnackDetails.css"
+import "../Style/ClientLoan.css"
+import Loans from "./Loans"
+import ClosedLoans from  "./ClosedLoans"
 
 
 const API = process.env.REACT_APP_API_URL
@@ -11,7 +13,7 @@ function ClientLoans() {
   const [client, setClient] = useState({});
  
   const { clientId } = useParams();
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
 
 
@@ -50,43 +52,45 @@ function ClientLoans() {
 return (
   <article className="article-detail" >
 
-   <div className="snackDetails"> 
+   <div className="clientloan"> 
     <h1>{client.first_name}  {client.last_name}</h1>
+
+
     {/* {snack.is_healthy ? (<img  className="corazon" src={heart.red} alt="red heart"/>) : (<img  className="corazon" src={heart.black} alt="black heart"/>)}
     <img className="snack-img" src={snack.image} alt="snack pic" /> */}
-    <div>
-         <h3>Adress:{client.direccion}  </h3>
-         <h3>Ph:{client.telefono} </h3>
-         <h3>Email:{client.email} </h3>
-         <h3>Social Sec.:{client.ss} </h3>
-         <h3>DoB:{client.dob} </h3>
-         <h3>Lic Numeber:{client.lic_number} </h3>
+    <div className="clientdatos">
+         <h3>Address: {client.direccion}  </h3>
+         <h3>Ph: {client.telefono} </h3>
+         <h3>Email: {client.email} </h3>
+         
+    </div>
+    <div className="clientdatos">
+        <h3>Social Sec.: {client.ss} </h3>
+         <h3>DoB: {client.dob} </h3>
+         <h3>DMV Lic: {client.lic_number} </h3>
     </div>
    
 
 
-    <div className="showNavigation">
-        <div>
+    <div className="clientdatos">
+        <div >
           <Link to={`/clients`}>
-            <button>Back</button>
+            <button className="bton">Back</button>
           </Link>
         </div>
-        <div>
+        <div  >
           <Link to={`/clients/${client.client_id}/edit`}>
-            <button>Edit</button>
+            <button  className="bton">Edit</button>
           </Link>
         </div>
         {/* <div>
           <button onClick={handleDelete}>Delete</button>
         </div> */}
       </div>
-      {/* <Reviews /> */}
-    
-   
-
-    
-
+      
     </div>
+    < Loans />
+    < ClosedLoans />
   </article>
 ); 
 }

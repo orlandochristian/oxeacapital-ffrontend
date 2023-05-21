@@ -1,16 +1,16 @@
 .clients{
-    background-image: linear-gradient(to right,rgb(233, 215, 137),rgb(255,0, 0, 0),rgb(233, 215, 137));
+    background-image: linear-gradient(to right,#f2f2f2,rgb(255,0, 0, 0),#f4f4f4);
       border-radius: 10px;
       padding: 2em;
       box-shadow: 2px 2px 4px rgb(188, 182, 182);
       margin: 20px auto;
-      width: 80%;
+      width: 90%;
     }
     
     .all-clients {
       display: grid;
       gap: 20px;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
 
     .oneclient {

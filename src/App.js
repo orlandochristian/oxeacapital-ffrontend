@@ -5,13 +5,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import ShowClients from "./Pages/ShowClients";
 import ClientById from "./Pages/ClientById";
+import NewPayment from "./Components/NewPayment";
+import NewLoan from "./Components/NewLoan.js";
+import NewClient from "./Pages/NewClient";
+import ActiveLoans from "./Components/ActiveLoans";
 
-
-
-// import EditAlbum from "./Pages/EditSnack";
 // import FourOFour from "./Pages/FourOFour";
 
-// import NewSnack from "./Pages/NewSnack";
+
 
 // import SnackEdit from "./Pages/SnackEdit";
 
@@ -29,13 +30,17 @@ function App() {
           <Routes>
                <Route path="/" element={<Home />} />
                <Route path="/clients" element={<ShowClients />} />
+               <Route path="/active" element={<ActiveLoans />} />
+               <Route path="/clients/new" element ={<NewClient />} />
                <Route exact path="/clients/:clientId" element={<ClientById />} />
+               <Route exact path="/clients/:clientId/loans" element={<NewLoan />} />
+               <Route exact path="/clients/:clientId/loans/:loanId/payments" element={<NewPayment/>} />
             {/* 
            
-            <Route path="/snacks/new" element={<NewSnack />} />
+           
             <Route path="/snacks/:snackId/edit" element={<SnackEdit />} />
             
-            <Route path="/about" element ={<About />} />
+            
             <Route path="*" element={<FourOFour />} />  */}
             
             

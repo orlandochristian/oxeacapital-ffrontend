@@ -17,10 +17,10 @@ export default function NavBar() {
           
 
            {/* <li><Link to="/Activeloans">Active Loans</Link></li> */}
-           <li><Link to="/">Active Loans</Link></li>
+           <li><Link to="/active">Active Loans</Link></li>
      
             {/* <li><Link to="/clients/new">New Client</Link></li> */}
-            <li><Link to="/">New Client</Link></li>
+            <li><Link to="/clients/new">New Client</Link></li>
      
            
         </ul>

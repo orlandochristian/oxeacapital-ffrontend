@@ -8,6 +8,7 @@ function Client({ client }) {
         <article className="oneclient">
       
           <h3>{client.first_name}  {client.last_name}</h3>
+          <p>Cell Ph: {client.telefono}</p>
         </article>
         </Link>
       
