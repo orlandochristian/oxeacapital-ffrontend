@@ -7,8 +7,8 @@ function Client({ client }) {
         <Link to={`/clients/${client.client_id}`}>
         <article className="oneclient">
       
-          <h3>{client.first_name}  {client.last_name}</h3>
-          <p>Cell Ph: {client.telefono}</p>
+          <h2>{client.first_name}  {client.last_name}</h2>
+          <h4>Cell Ph: {client.telefono}</h4>
         </article>
         </Link>
       

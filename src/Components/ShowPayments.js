@@ -37,8 +37,10 @@ const { activeloan } = props;
           <thead>
             <tr>
               <th> <Link to={`/clients/${clientId}/loans/${activeloan.loan_id}/payments`} ><button>Add New Payment</button> </Link> </th>
-              <th> <Link to="/" ><button>Roll Over</button> </Link> </th>
-              <th> <Link to="/" ><button>Close Loan</button> </Link> </th>
+              {/* <th> <Link to="/" ><button>Roll Over</button> </Link> </th>
+              <th> <Link to="/" ><button>Close Loan</button> </Link> </th> */}
+               <th> <button>Roll Over</button> </th>
+               <th> <button>Close Loan</button>  </th>
             
             </tr>
             <tr>

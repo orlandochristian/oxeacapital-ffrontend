@@ -25,7 +25,7 @@ function Clients() {
   return (
    
       <section className="clients">
-          <p>Clients</p>
+          <h1>Clients</h1>
           <article className="all-clients">
              
             {clients.map((client) => {

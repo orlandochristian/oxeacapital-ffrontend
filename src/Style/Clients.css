@@ -1,8 +1,8 @@
 .clients{
-    background-image: linear-gradient(to right,#f2f2f2,rgb(255,0, 0, 0),#f4f4f4);
+    /* background-image: linear-gradient(to right,#f2f2f2,rgb(255,0, 0, 0),#f4f4f4); */
       border-radius: 10px;
       padding: 2em;
-      box-shadow: 2px 2px 4px rgb(188, 182, 182);
+      /* box-shadow: 2px 2px 4px rgb(188, 182, 182); */
       margin: 20px auto;
       width: 90%;
     }
@@ -19,9 +19,13 @@
         display: block;
         padding: 20px;
         text-align: center;
+        color: black;
+        text-decoration: none;
         
       }
 
       .oneclient:hover {
+        transform: scale(1.4);
         box-shadow: 5px 5px 5px 5px grey;
+        color:navy;
       }
