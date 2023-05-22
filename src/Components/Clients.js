@@ -28,7 +28,7 @@ function Clients() {
           <h1>Clients</h1>
           <article className="all-clients">
              
-            { Array.isArray(clients) &&  clients.map((client) => {
+            { clients.map((client) => {
               return <Client key={client.client_id} client={client} />;
             })}
          </article>
