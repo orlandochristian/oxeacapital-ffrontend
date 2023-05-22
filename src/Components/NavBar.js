@@ -33,7 +33,7 @@ export default function NavBar() {
 
          </Link>
       </div>  
-      <div id="movil" className="toggle_btn"> <i   className="fa-solid fa-bars"></i></div>
+      {/* <div id="movil" className="toggle_btn"> <i   className="fa-solid fa-bars"></i></div>
   
    
 
@@ -44,7 +44,7 @@ export default function NavBar() {
             <li><Link to="/clients/new">New Client</Link></li> 
             <li > <Link to="/"> SignIn </Link>  </li>
 
-      </div>
+      </div> */}
 
 
     </header>
