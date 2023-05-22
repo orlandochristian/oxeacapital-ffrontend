@@ -56,8 +56,6 @@ return (
     <h1>{client.first_name}  {client.last_name}</h1>
 
 
-    {/* {snack.is_healthy ? (<img  className="corazon" src={heart.red} alt="red heart"/>) : (<img  className="corazon" src={heart.black} alt="black heart"/>)}
-    <img className="snack-img" src={snack.image} alt="snack pic" /> */}
     <div className="clientdatos">
          <h3>Address: {client.direccion}  </h3>
          <h3>Ph: {client.telefono} </h3>

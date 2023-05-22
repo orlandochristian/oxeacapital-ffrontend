@@ -6,6 +6,8 @@ function ClientById() {
        <ClientLoans/>
       </div>
     );
+
+  
   }
   
   export default ClientById;

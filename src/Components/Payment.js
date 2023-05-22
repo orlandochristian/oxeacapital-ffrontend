@@ -11,7 +11,7 @@ function Payment({ payment }) {
         Payment Amount: ${payment.paymentamount}
       </td>
       <td>
-        Interest payed: ${payment.interestamount}
+        Interest paid: ${payment.interestamount}
       </td>
       <td>
         Date: {payment.paymentdate}

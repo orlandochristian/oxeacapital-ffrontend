@@ -45,7 +45,7 @@ const { activeloan } = props;
             </tr>
             <tr>
                <th>Loan Due: ${activeloan.amountdue}</th>
-               <th>Interest Due: ${interestdue}</th>
+               <th>Total Interest Paid: ${interestdue}</th>
                <th>Each Payment: ${cuota}</th>
             </tr>
           </thead>
