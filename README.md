@@ -1,3 +1,13 @@
+
+Oxea Capital App!
+------------------
+
+Introducing Oxea App, a money lending company for a individuals ans small businesses. Empowering a money lending company.
+Objective. To provide a convinient and efficient plataform to create, access loans, manage payments, track pending overdue payments and view completed loans.
+
+
+
+
 Helpful Links!
 -----------------
 
